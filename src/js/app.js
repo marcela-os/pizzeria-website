@@ -121,9 +121,7 @@ const app = {
   initCarousel: function(){
     const thisApp = this;
 
-    const carouselElement = document.querySelector(select.carousel.element);
     thisApp.carousel = new Carousel();
-    //console.log('testApp', carouselElement);
   },
 
   init: function(){

@@ -94,6 +94,7 @@ class Product{
         const option = param.options[optionId];
         //co robi ta const? - sprawdzamy, czy istnieje formData[paramId], a jeśli tak, to czy ta tablica zawiera klucz równy wartości optionId
         const optionSelected = formData.hasOwnProperty(paramId) && formData[paramId].indexOf(optionId) > -1;
+        //Object.prototype.hasOwnProperty.call(formData,paramId) - has hasOwnProperty można zamienić na to
         //jesli opcja jest wybrana i opcja nie jest domyślna
         if(optionSelected && !option.default){
           price += option.price; // add price
